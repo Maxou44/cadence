@@ -1,0 +1,2451 @@
+{
+"ProgramData": [{
+            "dataStreams": [{
+                "progress": 0,
+                "value": 7
+            }, {
+                "progress": 0.125,
+                "value": 8
+            }, {
+                "progress": 0.25,
+                "value": 9
+            }, {
+                "progress": 0.375,
+                "value": 10
+            }, {
+                "progress": 0.5,
+                "value": 11
+            }, {
+                "progress": 0.625,
+                "value": 10
+            }, {
+                "progress": 0.75,
+                "value": 9
+            }, {
+                "progress": 0.875,
+                "value": 8
+            }, {
+                "progress": 1,
+                "value": 8
+            }],
+            "idCategorie": 1,
+            "idConsole": "3200001",
+            "idProgram": "PROG 1 KCAL 1 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "CALORIAS 1",
+                "CN": "CALORY 1",
+                "DE": "KALORIEN 1",
+                "EN": "CALORY 1",
+                "ES": "CALORÍAS 1",
+                "FR": "CALORIES 1",
+                "HI": "कैलोरी 1",
+                "HU": "KALÓRIA 1",
+                "IT": "CALORIE 1",
+                "NL": "CALORIEËN 1",
+                "PL": "KALORIE 1",
+                "PT": "CALORIAS 1",
+                "RO": "CALORII 1",
+                "RU": "КАЛОРИИ 1",
+                "TR": "KALORILER 1"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 5
+            }, {
+                "progress": 0.125,
+                "value": 6
+            }, {
+                "progress": 0.25,
+                "value": 6
+            }, {
+                "progress": 0.375,
+                "value": 7
+            }, {
+                "progress": 0.5,
+                "value": 7
+            }, {
+                "progress": 0.625,
+                "value": 8
+            }, {
+                "progress": 0.75,
+                "value": 8
+            }, {
+                "progress": 0.875,
+                "value": 9
+            }, {
+                "progress": 1,
+                "value": 9
+            }],
+            "idCategorie": 1,
+            "idConsole": "3200001",
+            "idProgram": "PROG 2 KCAL 2 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "CALORIAS 2",
+                "CN": "CALORY 2",
+                "DE": "KALORIEN 2",
+                "EN": "CALORY 2",
+                "ES": "CALORÍAS 2",
+                "FR": "CALORIES 2",
+                "HI": "कैलोरी 2",
+                "HU": "KALÓRIA 2",
+                "IT": "CALORIE 2",
+                "NL": "CALORIEËN 2",
+                "PL": "KALORIE 2",
+                "PT": "CALORIAS 2",
+                "RO": "CALORII 2",
+                "RU": "КАЛОРИИ 2",
+                "TR": "KALORILER 2"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 11
+            }, {
+                "progress": 0.125,
+                "value": 6
+            }, {
+                "progress": 0.25,
+                "value": 9
+            }, {
+                "progress": 0.375,
+                "value": 10
+            }, {
+                "progress": 0.5,
+                "value": 10
+            }, {
+                "progress": 0.625,
+                "value": 9
+            }, {
+                "progress": 0.75,
+                "value": 6
+            }, {
+                "progress": 0.875,
+                "value": 11
+            }, {
+                "progress": 1,
+                "value": 11
+            }],
+            "idCategorie": 1,
+            "idConsole": "3200001",
+            "idProgram": "PROG 3 KCAL 3 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "CALORIAS 3",
+                "CN": "CALORY 3",
+                "DE": "KALORIEN 3",
+                "EN": "CALORY 3",
+                "ES": "CALORÍAS 3",
+                "FR": "CALORIES 3",
+                "HI": "कैलोरी 3",
+                "HU": "KALÓRIA 3",
+                "IT": "CALORIE 3",
+                "NL": "CALORIEËN 3",
+                "PL": "KALORIE 3",
+                "PT": "CALORIAS 3",
+                "RO": "CALORII 3",
+                "RU": "КАЛОРИИ 3",
+                "TR": "KALORILER 3"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 6
+            }, {
+                "progress": 0.125,
+                "value": 9
+            }, {
+                "progress": 0.25,
+                "value": 6
+            }, {
+                "progress": 0.375,
+                "value": 10
+            }, {
+                "progress": 0.5,
+                "value": 9
+            }, {
+                "progress": 0.625,
+                "value": 8
+            }, {
+                "progress": 0.75,
+                "value": 7
+            }, {
+                "progress": 0.875,
+                "value": 9
+            }, {
+                "progress": 1,
+                "value": 9
+            }],
+            "idCategorie": 1,
+            "idConsole": "3200001",
+            "idProgram": "PROG 4 KCAL 4 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "CALORIAS 4",
+                "CN": "CALORY 4",
+                "DE": "KALORIEN 4",
+                "EN": "CALORY 4",
+                "ES": "CALORÍAS 4",
+                "FR": "CALORIES 4",
+                "HI": "कैलोरी 4",
+                "HU": "KALÓRIA 4",
+                "IT": "CALORIE 4",
+                "NL": "CALORIEËN 4",
+                "PL": "KALORIE 4",
+                "PT": "CALORIAS 4",
+                "RO": "CALORII 4",
+                "RU": "КАЛОРИИ 4",
+                "TR": "KALORILER 4"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 9
+            }, {
+                "progress": 0.125,
+                "value": 9
+            }, {
+                "progress": 0.25,
+                "value": 9
+            }, {
+                "progress": 0.375,
+                "value": 9
+            }, {
+                "progress": 0.5,
+                "value": 5
+            }, {
+                "progress": 0.625,
+                "value": 5
+            }, {
+                "progress": 0.75,
+                "value": 6
+            }, {
+                "progress": 0.875,
+                "value": 9
+            }, {
+                "progress": 1,
+                "value": 9
+            }],
+            "idCategorie": 1,
+            "idConsole": "3200001",
+            "idProgram": "PROG 5 KCAL 5 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "CALORIAS 5",
+                "CN": "CALORY 5",
+                "DE": "KALORIEN 5",
+                "EN": "CALORY 5",
+                "ES": "CALORÍAS 5",
+                "FR": "CALORIES 5",
+                "HI": "कैलोरी 5",
+                "HU": "KALÓRIA 5",
+                "IT": "CALORIE 5",
+                "NL": "CALORIEËN 5",
+                "PL": "KALORIE 5",
+                "PT": "CALORIAS 5",
+                "RO": "CALORII 5",
+                "RU": "КАЛОРИИ 5",
+                "TR": "KALORILER 5"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 4
+            }, {
+                "progress": 0.125,
+                "value": 6
+            }, {
+                "progress": 0.25,
+                "value": 8
+            }, {
+                "progress": 0.375,
+                "value": 12
+            }, {
+                "progress": 0.5,
+                "value": 12
+            }, {
+                "progress": 0.625,
+                "value": 8
+            }, {
+                "progress": 0.75,
+                "value": 6
+            }, {
+                "progress": 0.875,
+                "value": 4
+            }, {
+                "progress": 1,
+                "value": 4
+            }],
+            "idCategorie": 1,
+            "idConsole": "3200001",
+            "idProgram": "PROG 6 KCAL 6 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "CALORIAS 6",
+                "CN": "CALORY 6",
+                "DE": "KALORIEN 6",
+                "EN": "CALORY 6",
+                "ES": "CALORÍAS 6",
+                "FR": "CALORIES 6",
+                "HI": "कैलोरी 6",
+                "HU": "KALÓRIA 6",
+                "IT": "CALORIE 6",
+                "NL": "CALORIEËN 6",
+                "PL": "KALORIE 6",
+                "PT": "CALORIAS 6",
+                "RO": "CALORII 6",
+                "RU": "КАЛОРИИ 6",
+                "TR": "KALORILER 6"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 10
+            }, {
+                "progress": 0.125,
+                "value": 4
+            }, {
+                "progress": 0.25,
+                "value": 4
+            }, {
+                "progress": 0.375,
+                "value": 6
+            }, {
+                "progress": 0.5,
+                "value": 8
+            }, {
+                "progress": 0.625,
+                "value": 10
+            }, {
+                "progress": 0.75,
+                "value": 4
+            }, {
+                "progress": 0.875,
+                "value": 4
+            }, {
+                "progress": 1,
+                "value": 4
+            }],
+            "idCategorie": 0,
+            "idConsole": "3200001",
+            "idProgram": "PROG 7 FIT 1 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "SAÚDE 1",
+                "CN": "HEALTH 1",
+                "DE": "GESUNDHEIT 1",
+                "EN": "HEALTH 1",
+                "ES": "SALUD 1",
+                "FR": "SANTÉ 1",
+                "HI": "स्वास्थ्य 1",
+                "HU": "EGÉSZSÉG 1",
+                "IT": "SALUTE 1",
+                "NL": "GEZONDHEID 1",
+                "PL": "ZDROWIE 1",
+                "PT": "SAÚDE 1",
+                "RO": "SĂNĂTATE 1",
+                "RU": "ПОДДЕРЖАНИЕ ФОРМЫ 1",
+                "TR": "SAĞLIK 1"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 4
+            }, {
+                "progress": 0.125,
+                "value": 4
+            }, {
+                "progress": 0.25,
+                "value": 10
+            }, {
+                "progress": 0.375,
+                "value": 8
+            }, {
+                "progress": 0.5,
+                "value": 6
+            }, {
+                "progress": 0.625,
+                "value": 4
+            }, {
+                "progress": 0.75,
+                "value": 4
+            }, {
+                "progress": 0.875,
+                "value": 10
+            }, {
+                "progress": 1,
+                "value": 10
+            }],
+            "idCategorie": 0,
+            "idConsole": "3200001",
+            "idProgram": "PROG 8 FIT 2 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "SAÚDE 2",
+                "CN": "HEALTH 2",
+                "DE": "GESUNDHEIT 2",
+                "EN": "HEALTH 2",
+                "ES": "SALUD 2",
+                "FR": "SANTÉ 2",
+                "HI": "स्वास्थ्य 2",
+                "HU": "EGÉSZSÉG 2",
+                "IT": "SALUTE 2",
+                "NL": "GEZONDHEID 2",
+                "PL": "ZDROWIE 2",
+                "PT": "SAÚDE 2",
+                "RO": "SĂNĂTATE 2",
+                "RU": "ПОДДЕРЖАНИЕ ФОРМЫ 2",
+                "TR": "SAĞLIK 2"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 4
+            }, {
+                "progress": 0.125,
+                "value": 12
+            }, {
+                "progress": 0.25,
+                "value": 6
+            }, {
+                "progress": 0.375,
+                "value": 4
+            }, {
+                "progress": 0.5,
+                "value": 4
+            }, {
+                "progress": 0.625,
+                "value": 12
+            }, {
+                "progress": 0.75,
+                "value": 6
+            }, {
+                "progress": 0.875,
+                "value": 4
+            }, {
+                "progress": 1,
+                "value": 4
+            }],
+            "idCategorie": 0,
+            "idConsole": "3200001",
+            "idProgram": "PROG 9 FIT 3 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "SAÚDE 3",
+                "CN": "HEALTH 3",
+                "DE": "GESUNDHEIT 3",
+                "EN": "HEALTH 3",
+                "ES": "SALUD 3",
+                "FR": "SANTÉ 3",
+                "HI": "स्वास्थ्य 3",
+                "HU": "EGÉSZSÉG 3",
+                "IT": "SALUTE 3",
+                "NL": "GEZONDHEID 3",
+                "PL": "ZDROWIE 3",
+                "PT": "SAÚDE 3",
+                "RO": "SĂNĂTATE 3",
+                "RU": "ПОДДЕРЖАНИЕ ФОРМЫ 3",
+                "TR": "SAĞLIK 3"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 6
+            }, {
+                "progress": 0.125,
+                "value": 12
+            }, {
+                "progress": 0.25,
+                "value": 6
+            }, {
+                "progress": 0.375,
+                "value": 12
+            }, {
+                "progress": 0.5,
+                "value": 6
+            }, {
+                "progress": 0.625,
+                "value": 12
+            }, {
+                "progress": 0.75,
+                "value": 6
+            }, {
+                "progress": 0.875,
+                "value": 12
+            }, {
+                "progress": 1,
+                "value": 12
+            }],
+            "idCategorie": 0,
+            "idConsole": "3200001",
+            "idProgram": "PROG 10 FIT 4 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "SAÚDE 4",
+                "CN": "HEALTH 4",
+                "DE": "GESUNDHEIT 4",
+                "EN": "HEALTH 4",
+                "ES": "SALUD 4",
+                "FR": "SANTÉ 4",
+                "HI": "स्वास्थ्य 4",
+                "HU": "EGÉSZSÉG 4",
+                "IT": "SALUTE 4",
+                "NL": "GEZONDHEID 4",
+                "PL": "ZDROWIE 4",
+                "PT": "SAÚDE 4",
+                "RO": "SĂNĂTATE 4",
+                "RU": "ПОДДЕРЖАНИЕ ФОРМЫ 4",
+                "TR": "SAĞLIK 4"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 3
+            }, {
+                "progress": 0.125,
+                "value": 11
+            }, {
+                "progress": 0.25,
+                "value": 3
+            }, {
+                "progress": 0.375,
+                "value": 3
+            }, {
+                "progress": 0.5,
+                "value": 12
+            }, {
+                "progress": 0.625,
+                "value": 3
+            }, {
+                "progress": 0.75,
+                "value": 3
+            }, {
+                "progress": 0.875,
+                "value": 12
+            }, {
+                "progress": 1,
+                "value": 12
+            }],
+            "idCategorie": 0,
+            "idConsole": "3200001",
+            "idProgram": "PROG 11 FIT 5 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "SAÚDE 5",
+                "CN": "HEALTH 5",
+                "DE": "GESUNDHEIT 5",
+                "EN": "HEALTH 5",
+                "ES": "SALUD 5",
+                "FR": "SANTÉ 5",
+                "HI": "स्वास्थ्य 5",
+                "HU": "EGÉSZSÉG 5",
+                "IT": "SALUTE 5",
+                "NL": "GEZONDHEID 5",
+                "PL": "ZDROWIE 5",
+                "PT": "SAÚDE 5",
+                "RO": "SĂNĂTATE 5",
+                "RU": "ПОДДЕРЖАНИЕ ФОРМЫ 5",
+                "TR": "SAĞLIK 5"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 6
+            }, {
+                "progress": 0.125,
+                "value": 4
+            }, {
+                "progress": 0.25,
+                "value": 3
+            }, {
+                "progress": 0.375,
+                "value": 4
+            }, {
+                "progress": 0.5,
+                "value": 5
+            }, {
+                "progress": 0.625,
+                "value": 6
+            }, {
+                "progress": 0.75,
+                "value": 7
+            }, {
+                "progress": 0.875,
+                "value": 8
+            }, {
+                "progress": 1,
+                "value": 8
+            }],
+            "idCategorie": 0,
+            "idConsole": "3200001",
+            "idProgram": "PROG 12 FIT 6 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "SAÚDE 6",
+                "CN": "HEALTH 6",
+                "DE": "GESUNDHEIT 6",
+                "EN": "HEALTH 6",
+                "ES": "SALUD 6",
+                "FR": "SANTÉ 6",
+                "HI": "स्वास्थ्य 6",
+                "HU": "EGÉSZSÉG 6",
+                "IT": "SALUTE 6",
+                "NL": "GEZONDHEID 6",
+                "PL": "ZDROWIE 6",
+                "PT": "SAÚDE 6",
+                "RO": "SĂNĂTATE 6",
+                "RU": "ПОДДЕРЖАНИЕ ФОРМЫ 6",
+                "TR": "SAĞLIK 6"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 6
+            }, {
+                "progress": 0.125,
+                "value": 10
+            }, {
+                "progress": 0.25,
+                "value": 10
+            }, {
+                "progress": 0.375,
+                "value": 6
+            }, {
+                "progress": 0.5,
+                "value": 6
+            }, {
+                "progress": 0.625,
+                "value": 11
+            }, {
+                "progress": 0.75,
+                "value": 11
+            }, {
+                "progress": 0.875,
+                "value": 6
+            }, {
+                "progress": 1,
+                "value": 6
+            }],
+            "idCategorie": 2,
+            "idConsole": "3200001",
+            "idProgram": "PROG 13 ENDURANCE 1 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "RESISTÊNCIA 1",
+                "CN": "ENDURANCE 1",
+                "DE": "AUSDAUER 1",
+                "EN": "ENDURANCE 1",
+                "ES": "FONDO 1",
+                "FR": "ENDURANCE 1",
+                "HI": "धैर्य 1",
+                "HU": "ÁLLÓKÉPESSÉG 1",
+                "IT": "RESISTENZA 1",
+                "NL": "UITHOUDINGSVERMOGEN 1",
+                "PL": "WYTRZYMAŁOŚĆ 1",
+                "PT": "RESISTÊNCIA 1",
+                "RO": "ANDURANŢĂ 1",
+                "RU": "ВЫНОСЛИВОСТЬ 1",
+                "TR": "DAYANIKLILIK 1"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 10
+            }, {
+                "progress": 0.125,
+                "value": 8
+            }, {
+                "progress": 0.25,
+                "value": 6
+            }, {
+                "progress": 0.375,
+                "value": 4
+            }, {
+                "progress": 0.5,
+                "value": 2
+            }, {
+                "progress": 0.625,
+                "value": 6
+            }, {
+                "progress": 0.75,
+                "value": 8
+            }, {
+                "progress": 0.875,
+                "value": 10
+            }, {
+                "progress": 1,
+                "value": 10
+            }],
+            "idCategorie": 2,
+            "idConsole": "3200001",
+            "idProgram": "PROG 14 ENDURANCE 2 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "RESISTÊNCIA 2",
+                "CN": "ENDURANCE 2",
+                "DE": "AUSDAUER 2",
+                "EN": "ENDURANCE 2",
+                "ES": "FONDO 2",
+                "FR": "ENDURANCE 2",
+                "HI": "धैर्य 2",
+                "HU": "ÁLLÓKÉPESSÉG 2",
+                "IT": "RESISTENZA 2",
+                "NL": "UITHOUDINGSVERMOGEN 2",
+                "PL": "WYTRZYMAŁOŚĆ 2",
+                "PT": "RESISTÊNCIA 2",
+                "RO": "ANDURANŢĂ 2",
+                "RU": "ВЫНОСЛИВОСТЬ 2",
+                "TR": "DAYANIKLILIK 2"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 6
+            }, {
+                "progress": 0.125,
+                "value": 6
+            }, {
+                "progress": 0.25,
+                "value": 8
+            }, {
+                "progress": 0.375,
+                "value": 8
+            }, {
+                "progress": 0.5,
+                "value": 8
+            }, {
+                "progress": 0.625,
+                "value": 8
+            }, {
+                "progress": 0.75,
+                "value": 10
+            }, {
+                "progress": 0.875,
+                "value": 10
+            }, {
+                "progress": 1,
+                "value": 10
+            }],
+            "idCategorie": 2,
+            "idConsole": "3200001",
+            "idProgram": "PROG 15 ENDURANCE 3 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "RESISTÊNCIA 3",
+                "CN": "ENDURANCE 3",
+                "DE": "AUSDAUER 3",
+                "EN": "ENDURANCE 3",
+                "ES": "FONDO 3",
+                "FR": "ENDURANCE 3",
+                "HI": "धैर्य 3",
+                "HU": "ÁLLÓKÉPESSÉG 3",
+                "IT": "RESISTENZA 3",
+                "NL": "UITHOUDINGSVERMOGEN 3",
+                "PL": "WYTRZYMAŁOŚĆ 3",
+                "PT": "RESISTÊNCIA 3",
+                "RO": "ANDURANŢĂ 3",
+                "RU": "ВЫНОСЛИВОСТЬ 3",
+                "TR": "DAYANIKLILIK 3"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 7
+            }, {
+                "progress": 0.125,
+                "value": 8
+            }, {
+                "progress": 0.25,
+                "value": 9
+            }, {
+                "progress": 0.375,
+                "value": 10
+            }, {
+                "progress": 0.5,
+                "value": 3
+            }, {
+                "progress": 0.625,
+                "value": 4
+            }, {
+                "progress": 0.75,
+                "value": 5
+            }, {
+                "progress": 0.875,
+                "value": 6
+            }, {
+                "progress": 1,
+                "value": 6
+            }],
+            "idCategorie": 2,
+            "idConsole": "3200001",
+            "idProgram": "PROG 16 ENDURANCE 4 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "RESISTÊNCIA 4",
+                "CN": "ENDURANCE 4",
+                "DE": "AUSDAUER 4",
+                "EN": "ENDURANCE 4",
+                "ES": "FONDO 4",
+                "FR": "ENDURANCE 4",
+                "HI": "धैर्य 4",
+                "HU": "ÁLLÓKÉPESSÉG 4",
+                "IT": "RESISTENZA 4",
+                "NL": "UITHOUDINGSVERMOGEN 4",
+                "PL": "WYTRZYMAŁOŚĆ 4",
+                "PT": "RESISTÊNCIA 4",
+                "RO": "ANDURANŢĂ 4",
+                "RU": "ВЫНОСЛИВОСТЬ 4",
+                "TR": "DAYANIKLILIK 4"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 5
+            }, {
+                "progress": 0.125,
+                "value": 8
+            }, {
+                "progress": 0.25,
+                "value": 11
+            }, {
+                "progress": 0.375,
+                "value": 8
+            }, {
+                "progress": 0.5,
+                "value": 5
+            }, {
+                "progress": 0.625,
+                "value": 8
+            }, {
+                "progress": 0.75,
+                "value": 11
+            }, {
+                "progress": 0.875,
+                "value": 8
+            }, {
+                "progress": 1,
+                "value": 8
+            }],
+            "idCategorie": 2,
+            "idConsole": "3200001",
+            "idProgram": "PROG 17 ENDURANCE 5 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "RESISTÊNCIA 5",
+                "CN": "ENDURANCE 5",
+                "DE": "AUSDAUER 5",
+                "EN": "ENDURANCE 5",
+                "ES": "FONDO 5",
+                "FR": "ENDURANCE 5",
+                "HI": "धैर्य 5",
+                "HU": "ÁLLÓKÉPESSÉG 5",
+                "IT": "RESISTENZA 5",
+                "NL": "UITHOUDINGSVERMOGEN 5",
+                "PL": "WYTRZYMAŁOŚĆ 5",
+                "PT": "RESISTÊNCIA 5",
+                "RO": "ANDURANŢĂ 5",
+                "RU": "ВЫНОСЛИВОСТЬ 5",
+                "TR": "DAYANIKLILIK 5"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 10
+            }, {
+                "progress": 0.125,
+                "value": 9
+            }, {
+                "progress": 0.25,
+                "value": 8
+            }, {
+                "progress": 0.375,
+                "value": 6
+            }, {
+                "progress": 0.5,
+                "value": 3
+            }, {
+                "progress": 0.625,
+                "value": 8
+            }, {
+                "progress": 0.75,
+                "value": 12
+            }, {
+                "progress": 0.875,
+                "value": 11
+            }, {
+                "progress": 1,
+                "value": 11
+            }],
+            "idCategorie": 2,
+            "idConsole": "3200001",
+            "idProgram": "PROG 18 ENDURANCE 6 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "RESISTÊNCIA 6",
+                "CN": "ENDURANCE 6",
+                "DE": "AUSDAUER 6",
+                "EN": "ENDURANCE 6",
+                "ES": "FONDO 6",
+                "FR": "ENDURANCE 6",
+                "HI": "धैर्य 6",
+                "HU": "ÁLLÓKÉPESSÉG 6",
+                "IT": "RESISTENZA 6",
+                "NL": "UITHOUDINGSVERMOGEN 6",
+                "PL": "WYTRZYMAŁOŚĆ 6",
+                "PT": "RESISTÊNCIA 6",
+                "RO": "ANDURANŢĂ 6",
+                "RU": "ВЫНОСЛИВОСТЬ 6",
+                "TR": "DAYANIKLILIK 6"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 8
+            }, {
+                "progress": 0.125,
+                "value": 10
+            }, {
+                "progress": 0.25,
+                "value": 10
+            }, {
+                "progress": 0.375,
+                "value": 10
+            }, {
+                "progress": 0.5,
+                "value": 10
+            }, {
+                "progress": 0.625,
+                "value": 10
+            }, {
+                "progress": 0.75,
+                "value": 10
+            }, {
+                "progress": 0.875,
+                "value": 8
+            }, {
+                "progress": 1,
+                "value": 8
+            }],
+            "idCategorie": 3,
+            "idConsole": "3200001",
+            "idProgram": "PROG 19 PERF 1 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "TREINO FRACIONADO 1",
+                "CN": "INTERVAL TRAINING 1",
+                "DE": "INTERVALLTRAINING 1",
+                "EN": "INTERVAL TRAINING 1",
+                "ES": "ENTRENAMIENTO FRACCIONADO 1",
+                "FR": "FRACTIONNÉ 1",
+                "HI": "अंतराल प्रशिक्षण 1",
+                "HU": "RÉSZTÁVOS EDZÉSEK 1",
+                "IT": "ALLENAMENTO FRAZIONATO 1",
+                "NL": "INTERVALTRAINING 1",
+                "PL": "TRENING INTERWAŁOWY 1",
+                "PT": "TREINO FRACIONADO 1",
+                "RO": "ANTRENAMENT FRACŢIONAT 1",
+                "RU": "ИНТЕРВАЛЬНАЯ ТРЕНИРОВКА 1",
+                "TR": "FRAKSIYONLU ANTRENMAN 1"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 10
+            }, {
+                "progress": 0.125,
+                "value": 11
+            }, {
+                "progress": 0.25,
+                "value": 10
+            }, {
+                "progress": 0.375,
+                "value": 9
+            }, {
+                "progress": 0.5,
+                "value": 9
+            }, {
+                "progress": 0.625,
+                "value": 10
+            }, {
+                "progress": 0.75,
+                "value": 11
+            }, {
+                "progress": 0.875,
+                "value": 10
+            }, {
+                "progress": 1,
+                "value": 10
+            }],
+            "idCategorie": 3,
+            "idConsole": "3200001",
+            "idProgram": "PROG 20 PERF 2 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "TREINO FRACIONADO 2",
+                "CN": "INTERVAL TRAINING 2",
+                "DE": "INTERVALLTRAINING 2",
+                "EN": "INTERVAL TRAINING 2",
+                "ES": "ENTRENAMIENTO FRACCIONADO 2",
+                "FR": "FRACTIONNÉ 2",
+                "HI": "अंतराल प्रशिक्षण 2",
+                "HU": "RÉSZTÁVOS EDZÉSEK 2",
+                "IT": "ALLENAMENTO FRAZIONATO 2",
+                "NL": "INTERVALTRAINING 2",
+                "PL": "TRENING INTERWAŁOWY 2",
+                "PT": "TREINO FRACIONADO 2",
+                "RO": "ANTRENAMENT FRACŢIONAT 2",
+                "RU": "ИНТЕРВАЛЬНАЯ ТРЕНИРОВКА 2",
+                "TR": "FRAKSIYONLU ANTRENMAN 2"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 8
+            }, {
+                "progress": 0.125,
+                "value": 8
+            }, {
+                "progress": 0.25,
+                "value": 9
+            }, {
+                "progress": 0.375,
+                "value": 9
+            }, {
+                "progress": 0.5,
+                "value": 10
+            }, {
+                "progress": 0.625,
+                "value": 11
+            }, {
+                "progress": 0.75,
+                "value": 11
+            }, {
+                "progress": 0.875,
+                "value": 11
+            }, {
+                "progress": 1,
+                "value": 11
+            }],
+            "idCategorie": 3,
+            "idConsole": "3200001",
+            "idProgram": "PROG 21 PERF 3 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "TREINO FRACIONADO 3",
+                "CN": "INTERVAL TRAINING 3",
+                "DE": "INTERVALLTRAINING 3",
+                "EN": "INTERVAL TRAINING 3",
+                "ES": "ENTRENAMIENTO FRACCIONADO 3",
+                "FR": "FRACTIONNÉ 3",
+                "HI": "अंतराल प्रशिक्षण 3",
+                "HU": "RÉSZTÁVOS EDZÉSEK 3",
+                "IT": "ALLENAMENTO FRAZIONATO 3",
+                "NL": "INTERVALTRAINING 3",
+                "PL": "TRENING INTERWAŁOWY 3",
+                "PT": "TREINO FRACIONADO 3",
+                "RO": "ANTRENAMENT FRACŢIONAT 3",
+                "RU": "ИНТЕРВАЛЬНАЯ ТРЕНИРОВКА 3",
+                "TR": "FRAKSIYONLU ANTRENMAN 3"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 7
+            }, {
+                "progress": 0.125,
+                "value": 7
+            }, {
+                "progress": 0.25,
+                "value": 9
+            }, {
+                "progress": 0.375,
+                "value": 9
+            }, {
+                "progress": 0.5,
+                "value": 8
+            }, {
+                "progress": 0.625,
+                "value": 8
+            }, {
+                "progress": 0.75,
+                "value": 9
+            }, {
+                "progress": 0.875,
+                "value": 9
+            }, {
+                "progress": 1,
+                "value": 9
+            }],
+            "idCategorie": 3,
+            "idConsole": "3200001",
+            "idProgram": "PROG 22 PERF 4 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "TREINO FRACIONADO 4",
+                "CN": "INTERVAL TRAINING 4",
+                "DE": "INTERVALLTRAINING 4",
+                "EN": "INTERVAL TRAINING 4",
+                "ES": "ENTRENAMIENTO FRACCIONADO 4",
+                "FR": "FRACTIONNÉ 4",
+                "HI": "अंतराल प्रशिक्षण 4",
+                "HU": "RÉSZTÁVOS EDZÉSEK 4",
+                "IT": "ALLENAMENTO FRAZIONATO 4",
+                "NL": "INTERVALTRAINING 4",
+                "PL": "TRENING INTERWAŁOWY 4",
+                "PT": "TREINO FRACIONADO 4",
+                "RO": "ANTRENAMENT FRACŢIONAT 4",
+                "RU": "ИНТЕРВАЛЬНАЯ ТРЕНИРОВКА 4",
+                "TR": "FRAKSIYONLU ANTRENMAN 4"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 8
+            }, {
+                "progress": 0.125,
+                "value": 8
+            }, {
+                "progress": 0.25,
+                "value": 10
+            }, {
+                "progress": 0.375,
+                "value": 10
+            }, {
+                "progress": 0.5,
+                "value": 10
+            }, {
+                "progress": 0.625,
+                "value": 10
+            }, {
+                "progress": 0.75,
+                "value": 10
+            }, {
+                "progress": 0.875,
+                "value": 8
+            }, {
+                "progress": 1,
+                "value": 8
+            }],
+            "idCategorie": 3,
+            "idConsole": "3200001",
+            "idProgram": "PROG 23 PERF 5 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "TREINO FRACIONADO 5",
+                "CN": "INTERVAL TRAINING 5",
+                "DE": "INTERVALLTRAINING 5",
+                "EN": "INTERVAL TRAINING 5",
+                "ES": "ENTRENAMIENTO FRACCIONADO 5",
+                "FR": "FRACTIONNÉ 5",
+                "HI": "अंतराल प्रशिक्षण 5",
+                "HU": "RÉSZTÁVOS EDZÉSEK 5",
+                "IT": "ALLENAMENTO FRAZIONATO 5",
+                "NL": "INTERVALTRAINING 5",
+                "PL": "TRENING INTERWAŁOWY 5",
+                "PT": "TREINO FRACIONADO 5",
+                "RO": "ANTRENAMENT FRACŢIONAT 5",
+                "RU": "ИНТЕРВАЛЬНАЯ ТРЕНИРОВКА 5",
+                "TR": "FRAKSIYONLU ANTRENMAN 5"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 11
+            }, {
+                "progress": 0.125,
+                "value": 11
+            }, {
+                "progress": 0.25,
+                "value": 11
+            }, {
+                "progress": 0.375,
+                "value": 10
+            }, {
+                "progress": 0.5,
+                "value": 9
+            }, {
+                "progress": 0.625,
+                "value": 9
+            }, {
+                "progress": 0.75,
+                "value": 8
+            }, {
+                "progress": 0.875,
+                "value": 8
+            }, {
+                "progress": 1,
+                "value": 8
+            }],
+            "idCategorie": 3,
+            "idConsole": "3200001",
+            "idProgram": "PROG 24 PERF 6 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "TREINO FRACIONADO 6",
+                "CN": "INTERVAL TRAINING 6",
+                "DE": "INTERVALLTRAINING 6",
+                "EN": "INTERVAL TRAINING 6",
+                "ES": "ENTRENAMIENTO FRACCIONADO 6",
+                "FR": "FRACTIONNÉ 6",
+                "HI": "अंतराल प्रशिक्षण 6",
+                "HU": "RÉSZTÁVOS EDZÉSEK 6",
+                "IT": "ALLENAMENTO FRAZIONATO 6",
+                "NL": "INTERVALTRAINING 6",
+                "PL": "TRENING INTERWAŁOWY 6",
+                "PT": "TREINO FRACIONADO 6",
+                "RO": "ANTRENAMENT FRACŢIONAT 6",
+                "RU": "ИНТЕРВАЛЬНАЯ ТРЕНИРОВКА 6",
+                "TR": "FRAKSIYONLU ANTRENMAN 6"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 7
+            }, {
+                "progress": 0.125,
+                "value": 8
+            }, {
+                "progress": 0.25,
+                "value": 9
+            }, {
+                "progress": 0.375,
+                "value": 10
+            }, {
+                "progress": 0.5,
+                "value": 11
+            }, {
+                "progress": 0.625,
+                "value": 10
+            }, {
+                "progress": 0.75,
+                "value": 9
+            }, {
+                "progress": 0.875,
+                "value": 8
+            }, {
+                "progress": 1,
+                "value": 8
+            }],
+            "idCategorie": 1,
+            "idConsole": "3200002",
+            "idProgram": "PROG 1 KCAL 1 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "CALORIAS 1",
+                "CN": "CALORY 1",
+                "DE": "KALORIEN 1",
+                "EN": "CALORY 1",
+                "ES": "CALORÍAS 1",
+                "FR": "CALORIES 1",
+                "HI": "कैलोरी 1",
+                "HU": "KALÓRIA 1",
+                "IT": "CALORIE 1",
+                "NL": "CALORIEËN 1",
+                "PL": "KALORIE 1",
+                "PT": "CALORIAS 1",
+                "RO": "CALORII 1",
+                "RU": "КАЛОРИИ 1",
+                "TR": "KALORILER 1"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 5
+            }, {
+                "progress": 0.125,
+                "value": 6
+            }, {
+                "progress": 0.25,
+                "value": 6
+            }, {
+                "progress": 0.375,
+                "value": 7
+            }, {
+                "progress": 0.5,
+                "value": 7
+            }, {
+                "progress": 0.625,
+                "value": 8
+            }, {
+                "progress": 0.75,
+                "value": 8
+            }, {
+                "progress": 0.875,
+                "value": 9
+            }, {
+                "progress": 1,
+                "value": 9
+            }],
+            "idCategorie": 1,
+            "idConsole": "3200002",
+            "idProgram": "PROG 2 KCAL 2 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "CALORIAS 2",
+                "CN": "CALORY 2",
+                "DE": "KALORIEN 2",
+                "EN": "CALORY 2",
+                "ES": "CALORÍAS 2",
+                "FR": "CALORIES 2",
+                "HI": "कैलोरी 2",
+                "HU": "KALÓRIA 2",
+                "IT": "CALORIE 2",
+                "NL": "CALORIEËN 2",
+                "PL": "KALORIE 2",
+                "PT": "CALORIAS 2",
+                "RO": "CALORII 2",
+                "RU": "КАЛОРИИ 2",
+                "TR": "KALORILER 2"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 11
+            }, {
+                "progress": 0.125,
+                "value": 6
+            }, {
+                "progress": 0.25,
+                "value": 9
+            }, {
+                "progress": 0.375,
+                "value": 10
+            }, {
+                "progress": 0.5,
+                "value": 10
+            }, {
+                "progress": 0.625,
+                "value": 9
+            }, {
+                "progress": 0.75,
+                "value": 6
+            }, {
+                "progress": 0.875,
+                "value": 11
+            }, {
+                "progress": 1,
+                "value": 11
+            }],
+            "idCategorie": 1,
+            "idConsole": "3200002",
+            "idProgram": "PROG 3 KCAL 3 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "CALORIAS 3",
+                "CN": "CALORY 3",
+                "DE": "KALORIEN 3",
+                "EN": "CALORY 3",
+                "ES": "CALORÍAS 3",
+                "FR": "CALORIES 3",
+                "HI": "कैलोरी 3",
+                "HU": "KALÓRIA 3",
+                "IT": "CALORIE 3",
+                "NL": "CALORIEËN 3",
+                "PL": "KALORIE 3",
+                "PT": "CALORIAS 3",
+                "RO": "CALORII 3",
+                "RU": "КАЛОРИИ 3",
+                "TR": "KALORILER 3"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 6
+            }, {
+                "progress": 0.125,
+                "value": 9
+            }, {
+                "progress": 0.25,
+                "value": 6
+            }, {
+                "progress": 0.375,
+                "value": 10
+            }, {
+                "progress": 0.5,
+                "value": 9
+            }, {
+                "progress": 0.625,
+                "value": 8
+            }, {
+                "progress": 0.75,
+                "value": 7
+            }, {
+                "progress": 0.875,
+                "value": 9
+            }, {
+                "progress": 1,
+                "value": 9
+            }],
+            "idCategorie": 1,
+            "idConsole": "3200002",
+            "idProgram": "PROG 4 KCAL 4 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "CALORIAS 4",
+                "CN": "CALORY 4",
+                "DE": "KALORIEN 4",
+                "EN": "CALORY 4",
+                "ES": "CALORÍAS 4",
+                "FR": "CALORIES 4",
+                "HI": "कैलोरी 4",
+                "HU": "KALÓRIA 4",
+                "IT": "CALORIE 4",
+                "NL": "CALORIEËN 4",
+                "PL": "KALORIE 4",
+                "PT": "CALORIAS 4",
+                "RO": "CALORII 4",
+                "RU": "КАЛОРИИ 4",
+                "TR": "KALORILER 4"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 9
+            }, {
+                "progress": 0.125,
+                "value": 9
+            }, {
+                "progress": 0.25,
+                "value": 9
+            }, {
+                "progress": 0.375,
+                "value": 9
+            }, {
+                "progress": 0.5,
+                "value": 5
+            }, {
+                "progress": 0.625,
+                "value": 5
+            }, {
+                "progress": 0.75,
+                "value": 6
+            }, {
+                "progress": 0.875,
+                "value": 9
+            }, {
+                "progress": 1,
+                "value": 9
+            }],
+            "idCategorie": 1,
+            "idConsole": "3200002",
+            "idProgram": "PROG 5 KCAL 5 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "CALORIAS 5",
+                "CN": "CALORY 5",
+                "DE": "KALORIEN 5",
+                "EN": "CALORY 5",
+                "ES": "CALORÍAS 5",
+                "FR": "CALORIES 5",
+                "HI": "कैलोरी 5",
+                "HU": "KALÓRIA 5",
+                "IT": "CALORIE 5",
+                "NL": "CALORIEËN 5",
+                "PL": "KALORIE 5",
+                "PT": "CALORIAS 5",
+                "RO": "CALORII 5",
+                "RU": "КАЛОРИИ 5",
+                "TR": "KALORILER 5"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 4
+            }, {
+                "progress": 0.125,
+                "value": 6
+            }, {
+                "progress": 0.25,
+                "value": 8
+            }, {
+                "progress": 0.375,
+                "value": 12
+            }, {
+                "progress": 0.5,
+                "value": 12
+            }, {
+                "progress": 0.625,
+                "value": 8
+            }, {
+                "progress": 0.75,
+                "value": 6
+            }, {
+                "progress": 0.875,
+                "value": 4
+            }, {
+                "progress": 1,
+                "value": 4
+            }],
+            "idCategorie": 1,
+            "idConsole": "3200002",
+            "idProgram": "PROG 6 KCAL 6 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "CALORIAS 6",
+                "CN": "CALORY 6",
+                "DE": "KALORIEN 6",
+                "EN": "CALORY 6",
+                "ES": "CALORÍAS 6",
+                "FR": "CALORIES 6",
+                "HI": "कैलोरी 6",
+                "HU": "KALÓRIA 6",
+                "IT": "CALORIE 6",
+                "NL": "CALORIEËN 6",
+                "PL": "KALORIE 6",
+                "PT": "CALORIAS 6",
+                "RO": "CALORII 6",
+                "RU": "КАЛОРИИ 6",
+                "TR": "KALORILER 6"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 10
+            }, {
+                "progress": 0.125,
+                "value": 4
+            }, {
+                "progress": 0.25,
+                "value": 4
+            }, {
+                "progress": 0.375,
+                "value": 6
+            }, {
+                "progress": 0.5,
+                "value": 8
+            }, {
+                "progress": 0.625,
+                "value": 10
+            }, {
+                "progress": 0.75,
+                "value": 4
+            }, {
+                "progress": 0.875,
+                "value": 4
+            }, {
+                "progress": 1,
+                "value": 4
+            }],
+            "idCategorie": 0,
+            "idConsole": "3200002",
+            "idProgram": "PROG 7 FIT 1 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "SAÚDE 1",
+                "CN": "HEALTH 1",
+                "DE": "GESUNDHEIT 1",
+                "EN": "HEALTH 1",
+                "ES": "SALUD 1",
+                "FR": "SANTÉ 1",
+                "HI": "स्वास्थ्य 1",
+                "HU": "EGÉSZSÉG 1",
+                "IT": "SALUTE 1",
+                "NL": "GEZONDHEID 1",
+                "PL": "ZDROWIE 1",
+                "PT": "SAÚDE 1",
+                "RO": "SĂNĂTATE 1",
+                "RU": "ПОДДЕРЖАНИЕ ФОРМЫ 1",
+                "TR": "SAĞLIK 1"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 4
+            }, {
+                "progress": 0.125,
+                "value": 4
+            }, {
+                "progress": 0.25,
+                "value": 10
+            }, {
+                "progress": 0.375,
+                "value": 8
+            }, {
+                "progress": 0.5,
+                "value": 6
+            }, {
+                "progress": 0.625,
+                "value": 4
+            }, {
+                "progress": 0.75,
+                "value": 4
+            }, {
+                "progress": 0.875,
+                "value": 10
+            }, {
+                "progress": 1,
+                "value": 10
+            }],
+            "idCategorie": 0,
+            "idConsole": "3200002",
+            "idProgram": "PROG 8 FIT 2 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "SAÚDE 2",
+                "CN": "HEALTH 2",
+                "DE": "GESUNDHEIT 2",
+                "EN": "HEALTH 2",
+                "ES": "SALUD 2",
+                "FR": "SANTÉ 2",
+                "HI": "स्वास्थ्य 2",
+                "HU": "EGÉSZSÉG 2",
+                "IT": "SALUTE 2",
+                "NL": "GEZONDHEID 2",
+                "PL": "ZDROWIE 2",
+                "PT": "SAÚDE 2",
+                "RO": "SĂNĂTATE 2",
+                "RU": "ПОДДЕРЖАНИЕ ФОРМЫ 2",
+                "TR": "SAĞLIK 2"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 4
+            }, {
+                "progress": 0.125,
+                "value": 12
+            }, {
+                "progress": 0.25,
+                "value": 6
+            }, {
+                "progress": 0.375,
+                "value": 4
+            }, {
+                "progress": 0.5,
+                "value": 4
+            }, {
+                "progress": 0.625,
+                "value": 12
+            }, {
+                "progress": 0.75,
+                "value": 6
+            }, {
+                "progress": 0.875,
+                "value": 4
+            }, {
+                "progress": 1,
+                "value": 4
+            }],
+            "idCategorie": 0,
+            "idConsole": "3200002",
+            "idProgram": "PROG 9 FIT 3 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "SAÚDE 3",
+                "CN": "HEALTH 3",
+                "DE": "GESUNDHEIT 3",
+                "EN": "HEALTH 3",
+                "ES": "SALUD 3",
+                "FR": "SANTÉ 3",
+                "HI": "स्वास्थ्य 3",
+                "HU": "EGÉSZSÉG 3",
+                "IT": "SALUTE 3",
+                "NL": "GEZONDHEID 3",
+                "PL": "ZDROWIE 3",
+                "PT": "SAÚDE 3",
+                "RO": "SĂNĂTATE 3",
+                "RU": "ПОДДЕРЖАНИЕ ФОРМЫ 3",
+                "TR": "SAĞLIK 3"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 6
+            }, {
+                "progress": 0.125,
+                "value": 12
+            }, {
+                "progress": 0.25,
+                "value": 6
+            }, {
+                "progress": 0.375,
+                "value": 12
+            }, {
+                "progress": 0.5,
+                "value": 6
+            }, {
+                "progress": 0.625,
+                "value": 12
+            }, {
+                "progress": 0.75,
+                "value": 6
+            }, {
+                "progress": 0.875,
+                "value": 12
+            }, {
+                "progress": 1,
+                "value": 12
+            }],
+            "idCategorie": 0,
+            "idConsole": "3200002",
+            "idProgram": "PROG 10 FIT 4 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "SAÚDE 4",
+                "CN": "HEALTH 4",
+                "DE": "GESUNDHEIT 4",
+                "EN": "HEALTH 4",
+                "ES": "SALUD 4",
+                "FR": "SANTÉ 4",
+                "HI": "स्वास्थ्य 4",
+                "HU": "EGÉSZSÉG 4",
+                "IT": "SALUTE 4",
+                "NL": "GEZONDHEID 4",
+                "PL": "ZDROWIE 4",
+                "PT": "SAÚDE 4",
+                "RO": "SĂNĂTATE 4",
+                "RU": "ПОДДЕРЖАНИЕ ФОРМЫ 4",
+                "TR": "SAĞLIK 4"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 3
+            }, {
+                "progress": 0.125,
+                "value": 11
+            }, {
+                "progress": 0.25,
+                "value": 3
+            }, {
+                "progress": 0.375,
+                "value": 3
+            }, {
+                "progress": 0.5,
+                "value": 12
+            }, {
+                "progress": 0.625,
+                "value": 3
+            }, {
+                "progress": 0.75,
+                "value": 3
+            }, {
+                "progress": 0.875,
+                "value": 12
+            }, {
+                "progress": 1,
+                "value": 12
+            }],
+            "idCategorie": 0,
+            "idConsole": "3200002",
+            "idProgram": "PROG 11 FIT 5 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "SAÚDE 5",
+                "CN": "HEALTH 5",
+                "DE": "GESUNDHEIT 5",
+                "EN": "HEALTH 5",
+                "ES": "SALUD 5",
+                "FR": "SANTÉ 5",
+                "HI": "स्वास्थ्य 5",
+                "HU": "EGÉSZSÉG 5",
+                "IT": "SALUTE 5",
+                "NL": "GEZONDHEID 5",
+                "PL": "ZDROWIE 5",
+                "PT": "SAÚDE 5",
+                "RO": "SĂNĂTATE 5",
+                "RU": "ПОДДЕРЖАНИЕ ФОРМЫ 5",
+                "TR": "SAĞLIK 5"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 6
+            }, {
+                "progress": 0.125,
+                "value": 4
+            }, {
+                "progress": 0.25,
+                "value": 3
+            }, {
+                "progress": 0.375,
+                "value": 4
+            }, {
+                "progress": 0.5,
+                "value": 5
+            }, {
+                "progress": 0.625,
+                "value": 6
+            }, {
+                "progress": 0.75,
+                "value": 7
+            }, {
+                "progress": 0.875,
+                "value": 8
+            }, {
+                "progress": 1,
+                "value": 8
+            }],
+            "idCategorie": 0,
+            "idConsole": "3200002",
+            "idProgram": "PROG 12 FIT 6 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "SAÚDE 6",
+                "CN": "HEALTH 6",
+                "DE": "GESUNDHEIT 6",
+                "EN": "HEALTH 6",
+                "ES": "SALUD 6",
+                "FR": "SANTÉ 6",
+                "HI": "स्वास्थ्य 6",
+                "HU": "EGÉSZSÉG 6",
+                "IT": "SALUTE 6",
+                "NL": "GEZONDHEID 6",
+                "PL": "ZDROWIE 6",
+                "PT": "SAÚDE 6",
+                "RO": "SĂNĂTATE 6",
+                "RU": "ПОДДЕРЖАНИЕ ФОРМЫ 6",
+                "TR": "SAĞLIK 6"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 6
+            }, {
+                "progress": 0.125,
+                "value": 10
+            }, {
+                "progress": 0.25,
+                "value": 10
+            }, {
+                "progress": 0.375,
+                "value": 6
+            }, {
+                "progress": 0.5,
+                "value": 6
+            }, {
+                "progress": 0.625,
+                "value": 11
+            }, {
+                "progress": 0.75,
+                "value": 11
+            }, {
+                "progress": 0.875,
+                "value": 6
+            }, {
+                "progress": 1,
+                "value": 6
+            }],
+            "idCategorie": 2,
+            "idConsole": "3200002",
+            "idProgram": "PROG 13 ENDURANCE 1 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "RESISTÊNCIA 1",
+                "CN": "ENDURANCE 1",
+                "DE": "AUSDAUER 1",
+                "EN": "ENDURANCE 1",
+                "ES": "FONDO 1",
+                "FR": "ENDURANCE 1",
+                "HI": "धैर्य 1",
+                "HU": "ÁLLÓKÉPESSÉG 1",
+                "IT": "RESISTENZA 1",
+                "NL": "UITHOUDINGSVERMOGEN 1",
+                "PL": "WYTRZYMAŁOŚĆ 1",
+                "PT": "RESISTÊNCIA 1",
+                "RO": "ANDURANŢĂ 1",
+                "RU": "ВЫНОСЛИВОСТЬ 1",
+                "TR": "DAYANIKLILIK 1"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 10
+            }, {
+                "progress": 0.125,
+                "value": 8
+            }, {
+                "progress": 0.25,
+                "value": 6
+            }, {
+                "progress": 0.375,
+                "value": 4
+            }, {
+                "progress": 0.5,
+                "value": 2
+            }, {
+                "progress": 0.625,
+                "value": 6
+            }, {
+                "progress": 0.75,
+                "value": 8
+            }, {
+                "progress": 0.875,
+                "value": 10
+            }, {
+                "progress": 1,
+                "value": 10
+            }],
+            "idCategorie": 2,
+            "idConsole": "3200002",
+            "idProgram": "PROG 14 ENDURANCE 2 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "RESISTÊNCIA 2",
+                "CN": "ENDURANCE 2",
+                "DE": "AUSDAUER 2",
+                "EN": "ENDURANCE 2",
+                "ES": "FONDO 2",
+                "FR": "ENDURANCE 2",
+                "HI": "धैर्य 2",
+                "HU": "ÁLLÓKÉPESSÉG 2",
+                "IT": "RESISTENZA 2",
+                "NL": "UITHOUDINGSVERMOGEN 2",
+                "PL": "WYTRZYMAŁOŚĆ 2",
+                "PT": "RESISTÊNCIA 2",
+                "RO": "ANDURANŢĂ 2",
+                "RU": "ВЫНОСЛИВОСТЬ 2",
+                "TR": "DAYANIKLILIK 2"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 6
+            }, {
+                "progress": 0.125,
+                "value": 6
+            }, {
+                "progress": 0.25,
+                "value": 8
+            }, {
+                "progress": 0.375,
+                "value": 8
+            }, {
+                "progress": 0.5,
+                "value": 8
+            }, {
+                "progress": 0.625,
+                "value": 8
+            }, {
+                "progress": 0.75,
+                "value": 10
+            }, {
+                "progress": 0.875,
+                "value": 10
+            }, {
+                "progress": 1,
+                "value": 10
+            }],
+            "idCategorie": 2,
+            "idConsole": "3200002",
+            "idProgram": "PROG 15 ENDURANCE 3 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "RESISTÊNCIA 3",
+                "CN": "ENDURANCE 3",
+                "DE": "AUSDAUER 3",
+                "EN": "ENDURANCE 3",
+                "ES": "FONDO 3",
+                "FR": "ENDURANCE 3",
+                "HI": "धैर्य 3",
+                "HU": "ÁLLÓKÉPESSÉG 3",
+                "IT": "RESISTENZA 3",
+                "NL": "UITHOUDINGSVERMOGEN 3",
+                "PL": "WYTRZYMAŁOŚĆ 3",
+                "PT": "RESISTÊNCIA 3",
+                "RO": "ANDURANŢĂ 3",
+                "RU": "ВЫНОСЛИВОСТЬ 3",
+                "TR": "DAYANIKLILIK 3"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 7
+            }, {
+                "progress": 0.125,
+                "value": 8
+            }, {
+                "progress": 0.25,
+                "value": 9
+            }, {
+                "progress": 0.375,
+                "value": 30
+            }, {
+                "progress": 0.5,
+                "value": 3
+            }, {
+                "progress": 0.625,
+                "value": 4
+            }, {
+                "progress": 0.75,
+                "value": 5
+            }, {
+                "progress": 0.875,
+                "value": 6
+            }, {
+                "progress": 1,
+                "value": 6
+            }],
+            "idCategorie": 2,
+            "idConsole": "3200002",
+            "idProgram": "PROG 16 ENDURANCE 4 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "RESISTÊNCIA 4",
+                "CN": "ENDURANCE 4",
+                "DE": "AUSDAUER 4",
+                "EN": "ENDURANCE 4",
+                "ES": "FONDO 4",
+                "FR": "ENDURANCE 4",
+                "HI": "धैर्य 4",
+                "HU": "ÁLLÓKÉPESSÉG 4",
+                "IT": "RESISTENZA 4",
+                "NL": "UITHOUDINGSVERMOGEN 4",
+                "PL": "WYTRZYMAŁOŚĆ 4",
+                "PT": "RESISTÊNCIA 4",
+                "RO": "ANDURANŢĂ 4",
+                "RU": "ВЫНОСЛИВОСТЬ 4",
+                "TR": "DAYANIKLILIK 4"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 5
+            }, {
+                "progress": 0.125,
+                "value": 8
+            }, {
+                "progress": 0.25,
+                "value": 11
+            }, {
+                "progress": 0.375,
+                "value": 8
+            }, {
+                "progress": 0.5,
+                "value": 5
+            }, {
+                "progress": 0.625,
+                "value": 8
+            }, {
+                "progress": 0.75,
+                "value": 11
+            }, {
+                "progress": 0.875,
+                "value": 8
+            }, {
+                "progress": 1,
+                "value": 8
+            }],
+            "idCategorie": 2,
+            "idConsole": "3200002",
+            "idProgram": "PROG 17 ENDURANCE 5 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "RESISTÊNCIA 5",
+                "CN": "ENDURANCE 5",
+                "DE": "AUSDAUER 5",
+                "EN": "ENDURANCE 5",
+                "ES": "FONDO 5",
+                "FR": "ENDURANCE 5",
+                "HI": "धैर्य 5",
+                "HU": "ÁLLÓKÉPESSÉG 5",
+                "IT": "RESISTENZA 5",
+                "NL": "UITHOUDINGSVERMOGEN 5",
+                "PL": "WYTRZYMAŁOŚĆ 5",
+                "PT": "RESISTÊNCIA 5",
+                "RO": "ANDURANŢĂ 5",
+                "RU": "ВЫНОСЛИВОСТЬ 5",
+                "TR": "DAYANIKLILIK 5"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 10
+            }, {
+                "progress": 0.125,
+                "value": 9
+            }, {
+                "progress": 0.25,
+                "value": 8
+            }, {
+                "progress": 0.375,
+                "value": 6
+            }, {
+                "progress": 0.5,
+                "value": 3
+            }, {
+                "progress": 0.625,
+                "value": 8
+            }, {
+                "progress": 0.75,
+                "value": 12
+            }, {
+                "progress": 0.875,
+                "value": 11
+            }, {
+                "progress": 1,
+                "value": 11
+            }],
+            "idCategorie": 2,
+            "idConsole": "3200002",
+            "idProgram": "PROG 18 ENDURANCE 6 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "RESISTÊNCIA 6",
+                "CN": "ENDURANCE 6",
+                "DE": "AUSDAUER 6",
+                "EN": "ENDURANCE 6",
+                "ES": "FONDO 6",
+                "FR": "ENDURANCE 6",
+                "HI": "धैर्य 6",
+                "HU": "ÁLLÓKÉPESSÉG 6",
+                "IT": "RESISTENZA 6",
+                "NL": "UITHOUDINGSVERMOGEN 6",
+                "PL": "WYTRZYMAŁOŚĆ 6",
+                "PT": "RESISTÊNCIA 6",
+                "RO": "ANDURANŢĂ 6",
+                "RU": "ВЫНОСЛИВОСТЬ 6",
+                "TR": "DAYANIKLILIK 6"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 8
+            }, {
+                "progress": 0.125,
+                "value": 10
+            }, {
+                "progress": 0.25,
+                "value": 10
+            }, {
+                "progress": 0.375,
+                "value": 10
+            }, {
+                "progress": 0.5,
+                "value": 10
+            }, {
+                "progress": 0.625,
+                "value": 10
+            }, {
+                "progress": 0.75,
+                "value": 10
+            }, {
+                "progress": 0.875,
+                "value": 8
+            }, {
+                "progress": 1,
+                "value": 8
+            }],
+            "idCategorie": 3,
+            "idConsole": "3200002",
+            "idProgram": "PROG 19 PERF 1 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "TREINO FRACIONADO 1",
+                "CN": "INTERVAL TRAINING 1",
+                "DE": "INTERVALLTRAINING 1",
+                "EN": "INTERVAL TRAINING 1",
+                "ES": "ENTRENAMIENTO FRACCIONADO 1",
+                "FR": "FRACTIONNÉ 1",
+                "HI": "अंतराल प्रशिक्षण 1",
+                "HU": "RÉSZTÁVOS EDZÉSEK 1",
+                "IT": "ALLENAMENTO FRAZIONATO 1",
+                "NL": "INTERVALTRAINING 1",
+                "PL": "TRENING INTERWAŁOWY 1",
+                "PT": "TREINO FRACIONADO 1",
+                "RO": "ANTRENAMENT FRACŢIONAT 1",
+                "RU": "ИНТЕРВАЛЬНАЯ ТРЕНИРОВКА 1",
+                "TR": "FRAKSIYONLU ANTRENMAN 1"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 10
+            }, {
+                "progress": 0.125,
+                "value": 11
+            }, {
+                "progress": 0.25,
+                "value": 10
+            }, {
+                "progress": 0.375,
+                "value": 9
+            }, {
+                "progress": 0.5,
+                "value": 9
+            }, {
+                "progress": 0.625,
+                "value": 10
+            }, {
+                "progress": 0.75,
+                "value": 11
+            }, {
+                "progress": 0.875,
+                "value": 10
+            }, {
+                "progress": 1,
+                "value": 10
+            }],
+            "idCategorie": 3,
+            "idConsole": "3200002",
+            "idProgram": "PROG 20 PERF 2 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "TREINO FRACIONADO 2",
+                "CN": "INTERVAL TRAINING 2",
+                "DE": "INTERVALLTRAINING 2",
+                "EN": "INTERVAL TRAINING 2",
+                "ES": "ENTRENAMIENTO FRACCIONADO 2",
+                "FR": "FRACTIONNÉ 2",
+                "HI": "अंतराल प्रशिक्षण 2",
+                "HU": "RÉSZTÁVOS EDZÉSEK 2",
+                "IT": "ALLENAMENTO FRAZIONATO 2",
+                "NL": "INTERVALTRAINING 2",
+                "PL": "TRENING INTERWAŁOWY 2",
+                "PT": "TREINO FRACIONADO 2",
+                "RO": "ANTRENAMENT FRACŢIONAT 2",
+                "RU": "ИНТЕРВАЛЬНАЯ ТРЕНИРОВКА 2",
+                "TR": "FRAKSIYONLU ANTRENMAN 2"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 8
+            }, {
+                "progress": 0.125,
+                "value": 8
+            }, {
+                "progress": 0.25,
+                "value": 9
+            }, {
+                "progress": 0.375,
+                "value": 9
+            }, {
+                "progress": 0.5,
+                "value": 10
+            }, {
+                "progress": 0.625,
+                "value": 11
+            }, {
+                "progress": 0.75,
+                "value": 11
+            }, {
+                "progress": 0.875,
+                "value": 11
+            }, {
+                "progress": 1,
+                "value": 11
+            }],
+            "idCategorie": 3,
+            "idConsole": "3200002",
+            "idProgram": "PROG 21 PERF 3 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "TREINO FRACIONADO 3",
+                "CN": "INTERVAL TRAINING 3",
+                "DE": "INTERVALLTRAINING 3",
+                "EN": "INTERVAL TRAINING 3",
+                "ES": "ENTRENAMIENTO FRACCIONADO 3",
+                "FR": "FRACTIONNÉ 3",
+                "HI": "अंतराल प्रशिक्षण 3",
+                "HU": "RÉSZTÁVOS EDZÉSEK 3",
+                "IT": "ALLENAMENTO FRAZIONATO 3",
+                "NL": "INTERVALTRAINING 3",
+                "PL": "TRENING INTERWAŁOWY 3",
+                "PT": "TREINO FRACIONADO 3",
+                "RO": "ANTRENAMENT FRACŢIONAT 3",
+                "RU": "ИНТЕРВАЛЬНАЯ ТРЕНИРОВКА 3",
+                "TR": "FRAKSIYONLU ANTRENMAN 3"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 7
+            }, {
+                "progress": 0.125,
+                "value": 7
+            }, {
+                "progress": 0.25,
+                "value": 9
+            }, {
+                "progress": 0.375,
+                "value": 9
+            }, {
+                "progress": 0.5,
+                "value": 8
+            }, {
+                "progress": 0.625,
+                "value": 8
+            }, {
+                "progress": 0.75,
+                "value": 9
+            }, {
+                "progress": 0.875,
+                "value": 9
+            }, {
+                "progress": 1,
+                "value": 9
+            }],
+            "idCategorie": 3,
+            "idConsole": "3200002",
+            "idProgram": "PROG 22 PERF 4 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "TREINO FRACIONADO 4",
+                "CN": "INTERVAL TRAINING 4",
+                "DE": "INTERVALLTRAINING 4",
+                "EN": "INTERVAL TRAINING 4",
+                "ES": "ENTRENAMIENTO FRACCIONADO 4",
+                "FR": "FRACTIONNÉ 4",
+                "HI": "अंतराल प्रशिक्षण 4",
+                "HU": "RÉSZTÁVOS EDZÉSEK 4",
+                "IT": "ALLENAMENTO FRAZIONATO 4",
+                "NL": "INTERVALTRAINING 4",
+                "PL": "TRENING INTERWAŁOWY 4",
+                "PT": "TREINO FRACIONADO 4",
+                "RO": "ANTRENAMENT FRACŢIONAT 4",
+                "RU": "ИНТЕРВАЛЬНАЯ ТРЕНИРОВКА 4",
+                "TR": "FRAKSIYONLU ANTRENMAN 4"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 8
+            }, {
+                "progress": 0.125,
+                "value": 8
+            }, {
+                "progress": 0.25,
+                "value": 10
+            }, {
+                "progress": 0.375,
+                "value": 10
+            }, {
+                "progress": 0.5,
+                "value": 10
+            }, {
+                "progress": 0.625,
+                "value": 10
+            }, {
+                "progress": 0.75,
+                "value": 10
+            }, {
+                "progress": 0.875,
+                "value": 8
+            }, {
+                "progress": 1,
+                "value": 8
+            }],
+            "idCategorie": 3,
+            "idConsole": "3200002",
+            "idProgram": "PROG 23 PERF 5 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "TREINO FRACIONADO 5",
+                "CN": "INTERVAL TRAINING 5",
+                "DE": "INTERVALLTRAINING 5",
+                "EN": "INTERVAL TRAINING 5",
+                "ES": "ENTRENAMIENTO FRACCIONADO 5",
+                "FR": "FRACTIONNÉ 5",
+                "HI": "अंतराल प्रशिक्षण 5",
+                "HU": "RÉSZTÁVOS EDZÉSEK 5",
+                "IT": "ALLENAMENTO FRAZIONATO 5",
+                "NL": "INTERVALTRAINING 5",
+                "PL": "TRENING INTERWAŁOWY 5",
+                "PT": "TREINO FRACIONADO 5",
+                "RO": "ANTRENAMENT FRACŢIONAT 5",
+                "RU": "ИНТЕРВАЛЬНАЯ ТРЕНИРОВКА 5",
+                "TR": "FRAKSIYONLU ANTRENMAN 5"
+            },
+            "valueTarget": 1800
+        }, {
+            "dataStreams": [{
+                "progress": 0,
+                "value": 11
+            }, {
+                "progress": 0.125,
+                "value": 11
+            }, {
+                "progress": 0.25,
+                "value": 11
+            }, {
+                "progress": 0.375,
+                "value": 10
+            }, {
+                "progress": 0.5,
+                "value": 9
+            }, {
+                "progress": 0.625,
+                "value": 9
+            }, {
+                "progress": 0.75,
+                "value": 8
+            }, {
+                "progress": 0.875,
+                "value": 8
+            }, {
+                "progress": 1,
+                "value": 8
+            }],
+            "idCategorie": 3,
+            "idConsole": "3200002",
+            "idProgram": "PROG 24 PERF 6 C3.2",
+            "idUnitTarget": 24,
+            "label": {
+                "BR": "TREINO FRACIONADO 6",
+                "CN": "INTERVAL TRAINING 6",
+                "DE": "INTERVALLTRAINING 6",
+                "EN": "INTERVAL TRAINING 6",
+                "ES": "ENTRENAMIENTO FRACCIONADO 6",
+                "FR": "FRACTIONNÉ 6",
+                "HI": "अंतराल प्रशिक्षण 6",
+                "HU": "RÉSZTÁVOS EDZÉSEK 6",
+                "IT": "ALLENAMENTO FRAZIONATO 6",
+                "NL": "INTERVALTRAINING 6",
+                "PL": "TRENING INTERWAŁOWY 6",
+                "PT": "TREINO FRACIONADO 6",
+                "RO": "ANTRENAMENT FRACŢIONAT 6",
+                "RU": "ИНТЕРВАЛЬНАЯ ТРЕНИРОВКА 6",
+                "TR": "FRAKSIYONLU ANTRENMAN 6"
+            },
+            "valueTarget": 1800
+        }]
+}
