@@ -1,6 +1,5 @@
 <resources>
-    <!-- Thème de fenêtre minimal : tout le rendu est fait par Compose / MaterialTheme. -->
-    <style name="Theme.Cadence" parent="android:Theme.Material.Light.NoActionBar">
-        <item name="android:windowBackground">#FEF7FF</item>
-    </style>
+    <!-- Thème Material 3 officiel (Material Components), clair/sombre selon le système.
+         Les couleurs dynamiques (Material You) sont appliquées par DynamicColors dans CadenceApp. -->
+    <style name="Theme.Cadence" parent="Theme.Material3.DayNight.NoActionBar" />
 </resources>

@@ -1,5 +1,0 @@
-<resources>
-    <style name="Theme.Cadence" parent="android:Theme.Material.NoActionBar">
-        <item name="android:windowBackground">#141218</item>
-    </style>
-</resources>

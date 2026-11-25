@@ -38,8 +38,10 @@ Le protocole est documenté dans [`PROTOCOL.md`](PROTOCOL.md).
 ./gradlew :app:assembleRelease                              # APK
 ```
 
-La CI (GitHub Actions) compile l'APK à chaque push ou PR : il est téléchargeable dans
-l'onglet **Actions**, artefact `cadence-apk`.
+La CI (GitHub Actions) compile l'APK à chaque push ou PR. À chaque push sur `master`, elle
+publie aussi une **release GitHub** (`v1.0.N`). Pour installer la dernière version depuis le
+téléphone : <https://github.com/Maxou44/cadence/releases/latest/download/cadence.apk>
+(autoriser l'installation depuis le navigateur la première fois).
 
 ### Signature stable (pour installer les mises à jour par-dessus)
 

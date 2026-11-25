@@ -2,7 +2,6 @@
 
 package io.opendomyos.cadence.ui.screens
 
-import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -19,8 +18,6 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.DirectionsBike
 import androidx.compose.material.icons.filled.Autorenew
@@ -46,7 +43,6 @@ import androidx.compose.material3.FilterChip
 import androidx.compose.material3.FilterChipDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.IconButtonDefaults
 import androidx.compose.material3.IconToggleButton
 import androidx.compose.material3.LargeTopAppBar
 import androidx.compose.material3.ListItem
@@ -55,7 +51,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.SnackbarHost
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.TopAppBarDefaults
@@ -68,6 +63,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.input.nestedscroll.nestedScroll
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
@@ -81,10 +77,10 @@ import io.opendomyos.cadence.program.ProgramLibrary
 import io.opendomyos.cadence.session.Conn
 import io.opendomyos.cadence.ui.AppState
 import io.opendomyos.cadence.ui.Routes
+import io.opendomyos.cadence.ui.components.MetricGrid
 import io.opendomyos.cadence.ui.components.ProgramCurve
-import io.opendomyos.cadence.ui.components.StatusDot
+import io.opendomyos.cadence.ui.components.StatusIndicator
 import io.opendomyos.cadence.ui.components.tabular
-import io.opendomyos.cadence.ui.theme.LocalStatusColors
 import io.opendomyos.cadence.util.formatClock
 
 private sealed interface Filter {
@@ -183,49 +179,49 @@ fun HomeScreen(s: AppState, library: ProgramLibrary?) {
 @Composable
 private fun DeviceCard(s: AppState, conn: Conn, live: BikeData?, onMore: () -> Unit) {
     val saved = s.prefs.device
-    val status = LocalStatusColors.current
     val cs = MaterialTheme.colorScheme
     Card(
         Modifier.fillMaxWidth().padding(horizontal = 16.dp),
-        shape = RoundedCornerShape(28.dp),
+        shape = MaterialTheme.shapes.extraLarge,
         colors = CardDefaults.cardColors(containerColor = cs.surfaceContainerHigh),
     ) {
-        Column(Modifier.padding(20.dp)) {
-            Row(verticalAlignment = Alignment.CenterVertically) {
-                Surface(shape = RoundedCornerShape(16.dp), color = cs.primaryContainer, modifier = Modifier.size(56.dp)) {
-                    Box(contentAlignment = Alignment.Center) { Icon(Icons.AutoMirrored.Filled.DirectionsBike, null, Modifier.size(28.dp), tint = cs.onPrimaryContainer) }
-                }
-                Spacer(Modifier.width(16.dp))
-                Column(Modifier.weight(1f)) {
+        Column(Modifier.padding(vertical = 8.dp)) {
+            val (label, color, busy) = when (conn) {
+                is Conn.Connected -> Triple("Connecté · ${if (conn.protocol == Protocol.FTMS) "FTMS" else "Domyos"}", cs.primary, false)
+                is Conn.Connecting -> Triple("Connexion…", cs.primary, true)
+                is Conn.Reconnecting -> Triple("Reconnexion…", cs.tertiary, true)
+                is Conn.Failed -> Triple(conn.message, cs.error, false)
+                Conn.Idle -> Triple(if (saved == null) "Appairez votre vélo pour commencer" else "Déconnecté", cs.outline, false)
+            }
+            ListItem(
+                colors = ListItemDefaults.colors(containerColor = Color.Transparent),
+                leadingContent = { Icon(Icons.AutoMirrored.Filled.DirectionsBike, null, tint = cs.primary) },
+                headlineContent = {
                     Text(
                         (conn as? Conn.Connected)?.let { it.model ?: it.name } ?: saved?.name ?: "Aucun vélo",
                         style = MaterialTheme.typography.titleLarge, maxLines = 1, overflow = TextOverflow.Ellipsis,
                     )
-                    val (label, color, pulse) = when (conn) {
-                        is Conn.Connected -> Triple("Connecté · ${if (conn.protocol == Protocol.FTMS) "FTMS" else "Domyos"}", status.success, false)
-                        is Conn.Connecting -> Triple("Connexion…", cs.primary, true)
-                        is Conn.Reconnecting -> Triple("Reconnexion…", status.warning, true)
-                        is Conn.Failed -> Triple(conn.message, cs.error, false)
-                        Conn.Idle -> Triple(if (saved == null) "Appairez votre vélo pour commencer" else "Déconnecté", cs.outline, false)
+                },
+                supportingContent = {
+                    Row(verticalAlignment = Alignment.CenterVertically) {
+                        StatusIndicator(color, busy); Spacer(Modifier.width(8.dp))
+                        Text(label)
                     }
-                    Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.padding(top = 4.dp)) {
-                        StatusDot(color, pulse); Spacer(Modifier.width(8.dp))
-                        Text(label, style = MaterialTheme.typography.bodyMedium, color = cs.onSurfaceVariant)
-                    }
-                }
-                if (saved != null) IconButton(onClick = onMore) { Icon(Icons.Filled.MoreVert, "Options du vélo") }
-            }
+                },
+                trailingContent = if (saved != null) { { IconButton(onClick = onMore) { Icon(Icons.Filled.MoreVert, "Options du vélo") } } } else null,
+            )
             if (conn is Conn.Connected && live != null) {
-                Spacer(Modifier.height(16.dp))
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    LiveChip(Icons.Filled.Bolt, "${live.powerWatts ?: 0}", "W", Modifier.weight(1f))
-                    LiveChip(Icons.Filled.Autorenew, "${live.cadenceRpm?.toInt() ?: 0}", "rpm", Modifier.weight(1f))
-                    LiveChip(Icons.Filled.Tune, "${live.resistanceLevel ?: "–"}", "résist.", Modifier.weight(1f))
-                }
+                MetricGrid(
+                    listOf(
+                        Triple(Icons.Filled.Bolt, "${live.powerWatts ?: 0}", "W"),
+                        Triple(Icons.Filled.Autorenew, "${live.cadenceRpm?.toInt() ?: 0}", "rpm"),
+                        Triple(Icons.Filled.Tune, "${live.resistanceLevel ?: "–"}", "résist."),
+                    ),
+                    Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
+                )
             }
             if (conn !is Conn.Connected) {
-                Spacer(Modifier.height(16.dp))
-                Row(Modifier.fillMaxWidth(), horizontalArrangement = Arrangement.End, verticalAlignment = Alignment.CenterVertically) {
+                Row(Modifier.fillMaxWidth().padding(horizontal = 16.dp, vertical = 8.dp), horizontalArrangement = Arrangement.End, verticalAlignment = Alignment.CenterVertically) {
                     when {
                         saved == null -> Button(onClick = { s.openPairing() }, contentPadding = ButtonDefaults.ButtonWithIconContentPadding) {
                             Icon(Icons.Filled.Bluetooth, null, Modifier.size(ButtonDefaults.IconSize)); Spacer(Modifier.width(ButtonDefaults.IconSpacing)); Text("Appairer un vélo")
@@ -246,22 +242,9 @@ private fun DeviceCard(s: AppState, conn: Conn, live: BikeData?, onMore: () -> U
 }
 
 @Composable
-private fun LiveChip(icon: androidx.compose.ui.graphics.vector.ImageVector, value: String, unit: String, modifier: Modifier) {
-    Surface(modifier, shape = RoundedCornerShape(12.dp), color = MaterialTheme.colorScheme.surfaceContainerHighest) {
-        Row(Modifier.padding(vertical = 10.dp), horizontalArrangement = Arrangement.Center, verticalAlignment = Alignment.CenterVertically) {
-            Icon(icon, null, Modifier.size(18.dp), tint = MaterialTheme.colorScheme.primary)
-            Spacer(Modifier.width(6.dp))
-            Text(value, style = MaterialTheme.typography.titleMedium.tabular())
-            Spacer(Modifier.width(4.dp))
-            Text(unit, style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
-        }
-    }
-}
-
-@Composable
 private fun ActiveWorkoutCard(title: String, elapsedMs: Long, durationMs: Long?, paused: Boolean, onClick: () -> Unit) {
     val cs = MaterialTheme.colorScheme
-    Card(onClick = onClick, modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp), shape = RoundedCornerShape(28.dp),
+    Card(onClick = onClick, modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp), shape = MaterialTheme.shapes.extraLarge,
         colors = CardDefaults.cardColors(containerColor = cs.tertiaryContainer, contentColor = cs.onTertiaryContainer)) {
         Row(Modifier.padding(start = 20.dp, end = 12.dp, top = 16.dp, bottom = 16.dp), verticalAlignment = Alignment.CenterVertically) {
             Column(Modifier.weight(1f)) {
@@ -278,7 +261,7 @@ private fun ActiveWorkoutCard(title: String, elapsedMs: Long, durationMs: Long?,
 @Composable
 private fun FreeRideCard(onStart: () -> Unit) {
     val cs = MaterialTheme.colorScheme
-    Card(onClick = onStart, modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp), shape = RoundedCornerShape(28.dp),
+    Card(onClick = onStart, modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp), shape = MaterialTheme.shapes.extraLarge,
         colors = CardDefaults.cardColors(containerColor = cs.primaryContainer, contentColor = cs.onPrimaryContainer)) {
         Row(Modifier.padding(20.dp), verticalAlignment = Alignment.CenterVertically) {
             Column(Modifier.weight(1f)) {
@@ -286,8 +269,7 @@ private fun FreeRideCard(onStart: () -> Unit) {
                 Text("Réglez la résistance à la volée, sans programme", style = MaterialTheme.typography.bodyMedium)
             }
             Spacer(Modifier.width(12.dp))
-            FilledIconButton(onClick = onStart, modifier = Modifier.size(56.dp), shape = RoundedCornerShape(16.dp),
-                colors = IconButtonDefaults.filledIconButtonColors(containerColor = cs.primary, contentColor = cs.onPrimary)) {
+            FilledIconButton(onClick = onStart) {
                 Icon(Icons.Filled.PlayArrow, "Démarrer une séance libre")
             }
         }
@@ -302,7 +284,7 @@ private fun ProgramRow(p: Program, favorite: Boolean, plays: Int, onClick: () ->
         ListItem(
             colors = ListItemDefaults.colors(containerColor = cs.surfaceContainer),
             leadingContent = {
-                Box(Modifier.size(width = 88.dp, height = 56.dp).background(cs.surfaceContainerHighest, RoundedCornerShape(12.dp)).padding(8.dp)) {
+                Box(Modifier.size(width = 88.dp, height = 56.dp).padding(vertical = 8.dp)) {
                     ProgramCurve(p, Modifier.fillMaxSize(), compact = true)
                 }
             },

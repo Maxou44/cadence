@@ -4,6 +4,6 @@ local.properties
 .idea/
 *.iml
 .DS_Store
-signing/*.jks
+signing/
 captures/
 .kotlin/

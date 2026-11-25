@@ -13,13 +13,10 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.rememberScrollState
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
@@ -42,16 +39,18 @@ import androidx.compose.material.icons.filled.Timer
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.AssistChip
 import androidx.compose.material3.AssistChipDefaults
+import androidx.compose.material3.BottomAppBar
+import androidx.compose.material3.BottomAppBarDefaults
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.CenterAlignedTopAppBar
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
-import androidx.compose.material3.FilledTonalIconButton
+import androidx.compose.material3.FilledIconButton
+import androidx.compose.material3.FloatingActionButton
+import androidx.compose.material3.FloatingActionButtonDefaults
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
-import androidx.compose.material3.IconButtonDefaults
-import androidx.compose.material3.LargeFloatingActionButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.SnackbarHost
@@ -82,7 +81,6 @@ import io.opendomyos.cadence.ui.Routes
 import io.opendomyos.cadence.ui.components.MetricGrid
 import io.opendomyos.cadence.ui.components.ProgramCurve
 import io.opendomyos.cadence.ui.components.tabular
-import io.opendomyos.cadence.ui.theme.LocalStatusColors
 import io.opendomyos.cadence.util.formatClock
 
 @Composable
@@ -94,7 +92,6 @@ fun SessionScreen(s: AppState) {
     var confirmStop by remember { mutableStateOf(false) }
     val haptics = LocalHapticFeedback.current
     val cs = MaterialTheme.colorScheme
-    val status = LocalStatusColors.current
 
     // Écran allumé pendant la séance
     val view = LocalView.current
@@ -116,7 +113,7 @@ fun SessionScreen(s: AppState) {
                 actions = {
                     when (conn) {
                         is Conn.Connected -> {}
-                        is Conn.Connecting, is Conn.Reconnecting -> Icon(Icons.Filled.Bluetooth, "Reconnexion", tint = status.warning, modifier = Modifier.padding(end = 16.dp))
+                        is Conn.Connecting, is Conn.Reconnecting -> Icon(Icons.Filled.Bluetooth, "Reconnexion", tint = cs.tertiary, modifier = Modifier.padding(end = 16.dp))
                         else -> Icon(Icons.Filled.BluetoothDisabled, "Déconnecté", tint = cs.error, modifier = Modifier.padding(end = 16.dp))
                     }
                 },
@@ -124,29 +121,25 @@ fun SessionScreen(s: AppState) {
         },
         snackbarHost = { SnackbarHost(s.snackbar) },
         bottomBar = {
-            Row(
-                Modifier.fillMaxWidth().navigationBarsPadding().padding(top = 8.dp, bottom = 16.dp),
-                horizontalArrangement = Arrangement.Center, verticalAlignment = Alignment.CenterVertically,
-            ) {
-                FilledTonalIconButton(
-                    onClick = { if (w.finished) s.session.dismissSummary() else confirmStop = true },
-                    modifier = Modifier.size(56.dp),
-                ) { Icon(Icons.Filled.Stop, "Terminer la séance") }
-                Spacer(Modifier.width(24.dp))
-                LargeFloatingActionButton(
-                    onClick = { if (w.finished) s.session.dismissSummary() else s.session.togglePause() },
-                    containerColor = if (w.paused || w.finished) cs.primary else cs.primaryContainer,
-                    contentColor = if (w.paused || w.finished) cs.onPrimary else cs.onPrimaryContainer,
-                ) {
-                    Icon(
-                        when { w.finished -> Icons.Filled.Check; w.paused -> Icons.Filled.PlayArrow; else -> Icons.Filled.Pause },
-                        when { w.finished -> "Terminer"; w.paused -> "Reprendre"; else -> "Pause" },
-                        Modifier.size(36.dp),
-                    )
-                }
-                Spacer(Modifier.width(24.dp))
-                Spacer(Modifier.size(56.dp))
-            }
+            BottomAppBar(
+                actions = {
+                    IconButton(onClick = { if (w.finished) s.session.dismissSummary() else confirmStop = true }) {
+                        Icon(Icons.Filled.Stop, "Terminer la séance")
+                    }
+                },
+                floatingActionButton = {
+                    FloatingActionButton(
+                        onClick = { if (w.finished) s.session.dismissSummary() else s.session.togglePause() },
+                        containerColor = BottomAppBarDefaults.bottomAppBarFabColor,
+                        elevation = FloatingActionButtonDefaults.bottomAppBarFabElevation(),
+                    ) {
+                        Icon(
+                            when { w.finished -> Icons.Filled.Check; w.paused -> Icons.Filled.PlayArrow; else -> Icons.Filled.Pause },
+                            when { w.finished -> "Terminer"; w.paused -> "Reprendre"; else -> "Pause" },
+                        )
+                    }
+                },
+            )
         },
     ) { padding ->
         Column(
@@ -158,7 +151,7 @@ fun SessionScreen(s: AppState) {
             val ringTarget = if (hasDuration) w.progress else (w.elapsedMs % 60_000) / 60_000f
             val ring by animateFloatAsState(ringTarget, label = "ring")
             val ringColor by animateColorAsState(
-                when { w.finished -> status.success; w.paused || w.waitingForPedaling -> cs.outline; else -> cs.primary }, label = "ringColor",
+                when { w.finished -> cs.primary; w.paused || w.waitingForPedaling -> cs.outline; else -> cs.primary }, label = "ringColor",
             )
             Box(Modifier.padding(top = 8.dp).size(260.dp), contentAlignment = Alignment.Center) {
                 CircularProgressIndicator(
@@ -191,14 +184,13 @@ fun SessionScreen(s: AppState) {
 
             // Résistance
             Card(
-                Modifier.fillMaxWidth().padding(start = 16.dp, end = 16.dp, top = 16.dp), shape = RoundedCornerShape(28.dp),
+                Modifier.fillMaxWidth().padding(start = 16.dp, end = 16.dp, top = 16.dp), shape = MaterialTheme.shapes.extraLarge,
                 colors = CardDefaults.cardColors(containerColor = cs.secondaryContainer, contentColor = cs.onSecondaryContainer),
             ) {
                 Row(Modifier.padding(horizontal = 12.dp, vertical = 16.dp), verticalAlignment = Alignment.CenterVertically) {
-                    FilledTonalIconButton(
+                    FilledIconButton(
                         onClick = { haptics.performHapticFeedback(HapticFeedbackType.TextHandleMove); s.session.adjustResistance(-1) },
                         modifier = Modifier.size(64.dp),
-                        colors = IconButtonDefaults.filledTonalIconButtonColors(containerColor = cs.onSecondaryContainer.copy(alpha = 0.10f), contentColor = cs.onSecondaryContainer),
                     ) { Icon(Icons.Filled.Remove, "Diminuer la résistance", Modifier.size(28.dp)) }
                     Column(Modifier.weight(1f), horizontalAlignment = Alignment.CenterHorizontally) {
                         Text("RÉSISTANCE", style = MaterialTheme.typography.labelMedium)
@@ -213,10 +205,9 @@ fun SessionScreen(s: AppState) {
                             style = MaterialTheme.typography.labelMedium,
                         )
                     }
-                    FilledTonalIconButton(
+                    FilledIconButton(
                         onClick = { haptics.performHapticFeedback(HapticFeedbackType.TextHandleMove); s.session.adjustResistance(+1) },
                         modifier = Modifier.size(64.dp),
-                        colors = IconButtonDefaults.filledTonalIconButtonColors(containerColor = cs.onSecondaryContainer.copy(alpha = 0.10f), contentColor = cs.onSecondaryContainer),
                     ) { Icon(Icons.Filled.Add, "Augmenter la résistance", Modifier.size(28.dp)) }
                 }
             }
@@ -232,9 +223,9 @@ fun SessionScreen(s: AppState) {
                         AssistChip(onClick = {}, label = { Text(if (mx != mn) "Cadence $mn–$mx" else "Cadence $mn") },
                             leadingIcon = { Icon(Icons.Filled.Autorenew, null, Modifier.size(18.dp)) },
                             colors = AssistChipDefaults.assistChipColors(
-                                containerColor = if (ok) status.successContainer else status.warningContainer,
-                                labelColor = if (ok) status.onSuccessContainer else cs.onSurface,
-                                leadingIconContentColor = if (ok) status.success else status.warning,
+                                containerColor = if (ok) cs.primaryContainer else cs.errorContainer,
+                                labelColor = if (ok) cs.onPrimaryContainer else cs.onErrorContainer,
+                                leadingIconContentColor = if (ok) cs.onPrimaryContainer else cs.onErrorContainer,
                             ),
                             border = null)
                     }
@@ -276,7 +267,7 @@ fun SessionScreen(s: AppState) {
 
             // Profil du programme
             w.program?.let { p ->
-                Card(Modifier.fillMaxWidth().padding(16.dp), shape = RoundedCornerShape(24.dp),
+                Card(Modifier.fillMaxWidth().padding(16.dp), shape = MaterialTheme.shapes.extraLarge,
                     colors = CardDefaults.cardColors(containerColor = cs.surfaceContainer)) {
                     ProgramCurve(p, Modifier.fillMaxWidth().height(96.dp).padding(16.dp), progress = w.progress, offset = w.userOffset)
                 }

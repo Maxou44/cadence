@@ -3,7 +3,6 @@
 package io.opendomyos.cadence.ui.screens
 
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
@@ -16,7 +15,6 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.itemsIndexed
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.TrendingUp
@@ -40,12 +38,10 @@ import androidx.compose.material3.ListItem
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.SnackbarHost
-import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TopAppBarDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.input.nestedscroll.nestedScroll
@@ -89,8 +85,6 @@ fun ProgramScreen(s: AppState, p: Program) {
                 onClick = { s.startWorkout(p) },
                 icon = { Icon(if (connected) Icons.Filled.PlayArrow else Icons.Filled.Bluetooth, null) },
                 text = { Text(if (connected) "Démarrer" else "Connecter le vélo") },
-                containerColor = if (connected) cs.primary else cs.primaryContainer,
-                contentColor = if (connected) cs.onPrimary else cs.onPrimaryContainer,
             )
         },
         snackbarHost = { SnackbarHost(s.snackbar) },
@@ -116,7 +110,7 @@ fun ProgramScreen(s: AppState, p: Program) {
                 }
             }
             item {
-                Card(Modifier.fillMaxWidth().padding(horizontal = 16.dp), shape = RoundedCornerShape(28.dp),
+                Card(Modifier.fillMaxWidth().padding(horizontal = 16.dp), shape = MaterialTheme.shapes.extraLarge,
                     colors = CardDefaults.cardColors(containerColor = cs.surfaceContainer)) {
                     Column(Modifier.padding(start = 16.dp, end = 16.dp, top = 20.dp, bottom = 12.dp)) {
                         ProgramCurve(p, Modifier.fillMaxWidth().height(180.dp))
@@ -136,11 +130,7 @@ fun ProgramScreen(s: AppState, p: Program) {
             item { Text("Déroulé", style = MaterialTheme.typography.titleMedium, modifier = Modifier.padding(start = 24.dp, top = 24.dp, bottom = 4.dp)) }
             itemsIndexed(p.segments) { i, seg ->
                 ListItem(
-                    leadingContent = {
-                        Surface(shape = RoundedCornerShape(12.dp), color = cs.secondaryContainer, modifier = Modifier.size(40.dp)) {
-                            Box(contentAlignment = Alignment.Center) { Text("${seg.resistance}", style = MaterialTheme.typography.titleMedium) }
-                        }
-                    },
+                    overlineContent = { Text("Résistance ${seg.resistance}") },
                     headlineContent = { Text("${formatClock((seg.start * total).toLong())} – ${formatClock((seg.end * total).toLong())}", style = MaterialTheme.typography.bodyLarge.tabular()) },
                     supportingContent = {
                         Text(listOfNotNull(

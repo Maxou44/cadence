@@ -14,7 +14,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.filled.CheckCircle
@@ -35,7 +34,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import io.opendomyos.cadence.ui.AppState
 import io.opendomyos.cadence.ui.components.tabular
-import io.opendomyos.cadence.ui.theme.LocalStatusColors
 import io.opendomyos.cadence.util.formatClock
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -63,7 +61,7 @@ fun HistoryScreen(s: AppState) {
         }
         LazyColumn(Modifier.padding(padding), contentPadding = PaddingValues(16.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
             item {
-                Card(shape = RoundedCornerShape(28.dp), colors = CardDefaults.cardColors(containerColor = cs.primaryContainer, contentColor = cs.onPrimaryContainer)) {
+                Card(shape = MaterialTheme.shapes.extraLarge, colors = CardDefaults.cardColors(containerColor = cs.primaryContainer, contentColor = cs.onPrimaryContainer)) {
                     Column(Modifier.fillMaxWidth().padding(20.dp)) {
                         Text("TOTAL", style = MaterialTheme.typography.labelMedium)
                         Row(verticalAlignment = Alignment.Bottom) {
@@ -85,7 +83,7 @@ fun HistoryScreen(s: AppState) {
                                 Text(df.format(Date(e.dateMs)).replaceFirstChar { it.titlecase() }, style = MaterialTheme.typography.labelMedium, color = cs.onSurfaceVariant)
                                 Text(e.title, style = MaterialTheme.typography.titleMedium)
                             }
-                            if (e.completed) Icon(Icons.Filled.CheckCircle, "Terminé", tint = LocalStatusColors.current.success)
+                            if (e.completed) Icon(Icons.Filled.CheckCircle, "Terminé", tint = cs.primary)
                         }
                         Spacer(Modifier.height(8.dp))
                         Text(

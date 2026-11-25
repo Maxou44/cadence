@@ -1,11 +1,5 @@
 package io.opendomyos.cadence.ui.components
 
-import androidx.compose.animation.core.LinearEasing
-import androidx.compose.animation.core.RepeatMode
-import androidx.compose.animation.core.animateFloat
-import androidx.compose.animation.core.infiniteRepeatable
-import androidx.compose.animation.core.rememberInfiniteTransition
-import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -15,13 +9,18 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.SignalCellularAlt
+import androidx.compose.material.icons.filled.SignalCellularAlt1Bar
+import androidx.compose.material.icons.filled.SignalCellularAlt2Bar
+import androidx.compose.material3.Badge
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
+import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.CornerRadius
@@ -87,30 +86,22 @@ fun ProgramCurve(
     }
 }
 
-/** Pastille d'état, éventuellement pulsée. */
+/** Pastille d'état : badge Material 3, ou indicateur de progression pendant une connexion. */
 @Composable
-fun StatusDot(color: Color, pulsing: Boolean, modifier: Modifier = Modifier) {
-    val alpha = if (pulsing) {
-        val t = rememberInfiniteTransition(label = "dot")
-        val a by t.animateFloat(1f, 0.25f, infiniteRepeatable(tween(800, easing = LinearEasing), RepeatMode.Reverse), label = "a")
-        a
-    } else 1f
-    Canvas(modifier.size(8.dp)) { drawCircle(color.copy(alpha = alpha)) }
+fun StatusIndicator(color: Color, busy: Boolean, modifier: Modifier = Modifier) {
+    if (busy) CircularProgressIndicator(modifier.size(12.dp), color = color, strokeWidth = 2.dp)
+    else Badge(modifier, containerColor = color)
 }
 
-/** Barres de signal (RSSI). */
+/** Qualité du signal Bluetooth (RSSI) : icônes Material « signal cellulaire ». */
 @Composable
-fun SignalBars(rssi: Int, modifier: Modifier = Modifier) {
-    val level = when { rssi > -60 -> 4; rssi > -70 -> 3; rssi > -80 -> 2; else -> 1 }
-    val on = MaterialTheme.colorScheme.primary
-    val off = MaterialTheme.colorScheme.outlineVariant
-    Canvas(modifier.size(18.dp, 14.dp)) {
-        val bw = size.width / 7f
-        for (i in 0 until 4) {
-            val bh = size.height * (i + 1) / 4f
-            drawRoundRect(if (i < level) on else off, Offset(i * bw * 2f, size.height - bh), Size(bw, bh), CornerRadius(bw / 2))
-        }
+fun SignalIcon(rssi: Int, modifier: Modifier = Modifier) {
+    val icon = when {
+        rssi > -65 -> Icons.Filled.SignalCellularAlt
+        rssi > -80 -> Icons.Filled.SignalCellularAlt2Bar
+        else -> Icons.Filled.SignalCellularAlt1Bar
     }
+    Icon(icon, "Signal $rssi dBm", modifier, tint = MaterialTheme.colorScheme.onSurfaceVariant)
 }
 
 /** Tuile de mesure : icône + unité, valeur en grand. */
